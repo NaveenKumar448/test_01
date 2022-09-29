@@ -6,6 +6,6 @@ jobs:
       runs-on: ubuntu-latest
       steps:
             - name: Checking the code
-              uses: actions/checkout@3
+              uses: actions/checkout@v3
               with:
                    python-version: '3.10'
