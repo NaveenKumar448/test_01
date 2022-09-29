@@ -1,0 +1,11 @@
+name: Sample pytest workflow
+on: push
+jobs:
+    pytest-sample:
+      name: Ubuntu Base 
+      runs-on: ubuntu-latest
+      steps:
+            - name: Checking the code
+              uses: actions/checkout@3
+              with:
+                   python-version: '3.10'
