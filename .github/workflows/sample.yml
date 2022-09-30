@@ -1,9 +1,12 @@
 name: Sample pytest workflow
-on: push
+on: 
+    push:
+        branches:
+        - master
 jobs:
     pytest-sample:
       name: Ubuntu Base 
-      runs-on: ubuntu-latest
+      runs-on: [ubuntu-latest,windows]
       steps:
             - name: Checking the code
               uses: actions/checkout@v3
@@ -14,3 +17,4 @@ jobs:
             
             - name: Performing pytest command exection
               run: pytest
+              
