@@ -1,7 +1,8 @@
 import pytest
 
-def test_01(run_setup):
-  assert run_setup == 10
+@pytest.mark.parametrize("a, b", [(2,8), (4,6)])
+def test_01(a, b, run_setup):
+  assert run_setup == a + b
 
 # def test_02():
 #   assert "a" in "apple"
