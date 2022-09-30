@@ -15,7 +15,7 @@ jobs:
                    pip install pytest-github-report
             
             - name: Performing pytest command exection
-              run: pytest --github-report .
+              run: pytest --github-report sample_test/
             
           
               
