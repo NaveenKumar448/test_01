@@ -12,9 +12,10 @@ jobs:
             - name: Installing the dependencies
               run: pip install pytest
                    pip install pytest-html
+                   pip install pytest-github-report
             
             - name: Performing pytest command exection
-              run: pytest
+              run: pytest --github-report tests/
             - name: Archive Test results
               uses: actions/upload-artifact@v3
               with:
