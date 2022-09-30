@@ -14,5 +14,5 @@ jobs:
                    pip install pytest-html
             
             - name: Performing pytest command exection
-              run: pytest
+              run: pytest -v -s
               
