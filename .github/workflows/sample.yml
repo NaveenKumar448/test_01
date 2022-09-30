@@ -15,11 +15,7 @@ jobs:
                    pip install pytest-github-report
             
             - name: Performing pytest command exection
-              run: pytest --github-report tests/
-            - name: Archive Test results
-              uses: actions/upload-artifact@v3
-              with:
-                  name: code-coverage-report
-                  path: ./newreports.html
+              run: pytest --github-report .
+            
           
               
