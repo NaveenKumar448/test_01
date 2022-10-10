@@ -16,6 +16,11 @@ jobs:
             
             - name: Performing pytest command exection
               run: pytest --github-report sample_test/
+
+            - name: Code Coverage Summary Report
+              uses: irongut/CodeCoverageSummary@v1.3.0
+              with:
+                filename: coverage.cobertura.xml
             
           
               
